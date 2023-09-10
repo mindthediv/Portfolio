@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+html,
+body {
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(43, 27, 35);
+}
+a {
+  text-decoration: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.1rem;
+  color: rgb(0, 0, 0) !important;
+}
+p,
+span {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+main::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+main {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+main {
+  overflow-y: auto;
+  overflow-x: visible;
+  width: 100%;
+  height: 82vh;
+}
+
+.l-col a {
+  transform: rotate(-90deg);
+}
+.r-col a {
+  transform: rotate(90deg);
+}
+
+.r-col a,
+.l-col a,
+.c-col a {
+  font-size: 32px;
+}
+.r-col a,
+.l-col a {
+  position: fixed;
+}
+.top-col {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+.link {
+  color: rgb(43, 27, 35);
+  font-size: 48px;
+}
+
+.my-btn {
+  border: 1px solid rgb(43, 27, 35);
+  border-radius: 12px;
+
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+#contact-info a {
+  color: black;
+  font-size: 24px;
+}
+
+#navBar {
+  z-index: 100;
+}
+#navBar i {
+  font-size: 48px;
+  color: black;
+}
+
+.my-caro .carousel-item {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+}
+
+.my-caro h3 {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 0px;
+  border-radius: 24px;
+  width: fit-content;
+  margin: auto;
+  backdrop-filter: blur(4px);
+}
+
+.my-caro h3,
+.my-caro p {
+  color: rgb(43, 27, 35) !important;
+}
+
+.workBox {
+  width: 130px;
+  aspect-ratio: 1/1;
+  border: 2px black solid;
+  align-items: center;
+}
+
+.worksRow {
+  backdrop-filter: blur(16px);
+
+  background-color: rgba(255, 255, 255, 0.35);
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+}
+.worksRow:hover {
+  backdrop-filter: blur(0px);
+
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.4s ease-in-out;
+}
+
+.worksRow h3,
+.worksRow p {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 8px;
+}
+.worksRow p {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.workH3 {
+  background-color: white;
+  width: 100%;
+}
+.blurrer {
+  backdrop-filter: blur(8px);
+  filter: grayscale(100%);
+  transition: all 0.4s ease-in-out;
+}
+
+.blurrer:hover {
+  backdrop-filter: blur(0px);
+  filter: grayscale(0%);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.spinnerBg {
+  background-color: transparent;
+}
+
+.square {
+  aspect-ratio: 1/1;
+}
+.linkWrap {
+  position: relative;
+}
+.linkBg {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transform: scale(2);
+}
+
+@media (max-width: 576px) {
+  #about.link,
+  #works.link,
+  .dlg {
+    display: none;
+  }
+
+  .link {
+    font-size: 32px;
+  }
+
+  main {
+    height: unset;
+    width: 100vw;
+  }
+  .headCol {
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .col-center {
+    justify-content: center;
+  }
+  .workBox {
+    width: 150px;
+  }
+  main {
+    box-shadow: inset 0px 0px 36px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+}
