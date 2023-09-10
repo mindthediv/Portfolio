@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-image: url("../imgs/backgroundEpick.jpg");
+  // background-color: rgb(48, 48, 48);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  //background-image: radial-gradient(white, rgb(0, 0, 0, 0.2));
+  box-sizing: border-box;
+}
+.backoffice {
+  display: inline-block !important;
+}
+
+// HEADER ////////
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  background-image: linear-gradient(
+    180deg,
+    rgb(255, 255, 255, 0.5) 70%,
+    rgb(255, 255, 255, 0.2) 90%,
+    rgb(255, 255, 255, 0) 100%
+  );
+
+  //Login btn
+  .nav-item.dropdown .nav-link i {
+    font-size: 40px;
+  }
+}
+
+// AERO /////////////////
+
+#aero .container-fluid {
+  #aeroPremium {
+    position: relative;
+    align-items: center;
+    max-height: fit-content;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 32px 24px 24px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2em;
+
+    .textbg {
+      // backdrop-filter: blur(26px);
+      color: rgb(0, 0, 0);
+      border-radius: 2em;
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      padding: 2em;
+
+      h1 {
+        font-size: 2em;
+        font-weight: 900;
+        width: fit-content;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 0;
+        box-shadow: 0px 24px 16px 2px rgba(0, 0, 0, 0.164);
+
+        padding: 1em;
+        span {
+          font-size: 1.5em;
+        }
+      }
+      p {
+        text-transform: uppercase;
+        font-size: 1.2em;
+        background-color: white;
+        padding: 1em;
+        box-shadow: 0px 24px 16px 2px rgba(0, 0, 0, 0.164);
+        width: fit-content;
+      }
+      a {
+        // align-self: center;
+        width: fit-content;
+        font-size: 2em;
+        background-image: linear-gradient(
+            0deg,
+            rgb(255, 255, 255),
+            rgba(0, 0, 0, 0)
+          ),
+          radial-gradient(
+            rgb(127, 219, 255, 1),
+            rgba(0, 217, 255, 1),
+            rgba(0, 119, 255, 1)
+          );
+      }
+    }
+  }
+}
+
+// PRODGRID ////////////
+#productsGrid .container {
+  backdrop-filter: blur(4px);
+  .row {
+    // background-color: white;
+    backdrop-filter: blur(14px);
+  }
+  h2 {
+    width: fit-content;
+  }
+}
+
+.card {
+  box-shadow: 2px 2px 10px 0px;
+  min-height: 400px;
+  position: relative;
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0));
+
+  .card-img-top {
+    width: 100%;
+    padding: 1em;
+  }
+  a {
+    position: absolute;
+    bottom: 0px;
+    background-image: linear-gradient(
+        0deg,
+        rgb(255, 255, 255),
+        rgba(0, 0, 0, 0)
+      ),
+      radial-gradient(
+        rgb(127, 219, 255, 0.4),
+        rgba(0, 217, 255, 0.693),
+        rgba(0, 119, 255, 0.4)
+      );
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 1.2em;
+    transition: all 0.5s;
+    &:hover {
+      cursor: pointer;
+      color: white;
+      background-image: linear-gradient(
+          0deg,
+          rgb(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0)
+        ),
+        radial-gradient(
+          rgba(255, 125, 227, 0.4),
+          rgba(241, 83, 255, 0.693),
+          rgba(185, 51, 226, 0.4)
+        );
+    }
+  }
+}
+
+#trendRow {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+}
+
+// DETAILS
+#productsDetails .col-md-4 {
+  img {
+    padding: 3em;
+  }
+}
