@@ -1,5 +1,5 @@
 import { Container, Col, Row } from "react-bootstrap";
-import WorksCarousel from "./(components)/carousel";
+
 import Info from "./(components)/Info";
 import Header from "./(components)/Header";
 

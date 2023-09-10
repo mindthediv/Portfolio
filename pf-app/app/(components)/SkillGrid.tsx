@@ -15,7 +15,11 @@ export default function SkillGrid() {
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
   ];
-
+  let x = 0;
+  const count = () => {
+    x = x + 1;
+    return x;
+  };
   return (
     <Container className="my-4">
       <Row>
@@ -31,6 +35,7 @@ export default function SkillGrid() {
                 backgroundPosition: "center",
                 backgroundSize: "cover",
               }}
+              key={count()}
             ></Col>
           );
         })}

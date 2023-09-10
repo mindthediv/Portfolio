@@ -6,7 +6,11 @@ function WorksCarousel() {
     { img: "url(/assets/spotifyCover.png)", title: "Spotify Clone" },
     { img: "url(/assets/epicodeCover.png", title: "Epicode Benchmark Clone" },
   ];
-
+  let x = 0;
+  const count = () => {
+    x = x + 1;
+    return x;
+  };
   return (
     <>
       <h6 className="mb-0">Showcase</h6>
@@ -19,6 +23,7 @@ function WorksCarousel() {
                 backgroundImage: work.img,
                 height: 250 + "px",
               }}
+              key={count()}
             >
               <div className="h-100 d-flex justify-content-center align-items-center ">
                 <h3 className="p-4 shadow">{work.title}</h3>

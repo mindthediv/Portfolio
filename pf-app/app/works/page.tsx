@@ -1,5 +1,4 @@
 import { Container, Col, Row } from "react-bootstrap";
-import WorksCarousel from "../(components)/carousel";
 import works from "../(data)/works";
 
 export default function Works() {
