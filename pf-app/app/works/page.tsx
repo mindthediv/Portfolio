@@ -1,3 +1,5 @@
+"use client";
+
 import { Container, Col, Row } from "react-bootstrap";
 import works from "../(data)/works";
 

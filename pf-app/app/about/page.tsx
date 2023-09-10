@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client";
 import { Container, Col, Row } from "react-bootstrap";
 export default function About() {
   return (

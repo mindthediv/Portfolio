@@ -1,5 +1,5 @@
+"use client";
 import { Container, Col, Row } from "react-bootstrap";
-
 import Info from "./(components)/Info";
 import Header from "./(components)/Header";
 

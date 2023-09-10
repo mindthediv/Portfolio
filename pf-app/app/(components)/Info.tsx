@@ -1,3 +1,4 @@
+"use client";
 import { Col, Container, Row } from "react-bootstrap";
 import SkillGrid from "./SkillGrid";
 import Link from "next/link";
