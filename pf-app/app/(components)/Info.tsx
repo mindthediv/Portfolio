@@ -14,7 +14,7 @@ export default function Info() {
         >
           <Link href={"/"}>
             <i className="bi bi-envelope me-4 fs-3"></i>
-            gp.dev.contact@gmail.com
+            gabriele.p.devcontact@gmail.com
           </Link>
           <Link href={"/"} className="my-3">
             <i className="bi bi-github me-4 fs-3"></i>
