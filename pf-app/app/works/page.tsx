@@ -31,7 +31,7 @@ export default function Works() {
                 </Row>
                 <Row>
                   <Col>
-                    <p className="ps-2 h-100">{box.caption}</p>
+                    <p className="ps-2">{box.caption}</p>
                     <a href={box.repo} target="_blank">
                       <h5>See on GitHub</h5>
                     </a>
@@ -41,6 +41,7 @@ export default function Works() {
             </>
           );
         })}
+        {/* DESKTOP */}
         <div className="d-none d-sm-block">
           <Row className="rounded py-2 m-0 justify-content-evenly">
             {works.map((box) => {
