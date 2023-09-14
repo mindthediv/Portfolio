@@ -16,11 +16,13 @@ export default function Info() {
             <i className="bi bi-envelope me-4 fs-3"></i>
             gabriele.p.devcontact@gmail.com
           </Link>
-          <Link href={"/"} className="my-3">
+          <Link href={"https://github.com/mindthediv"} className="my-3">
             <i className="bi bi-github me-4 fs-3"></i>
             /mindthediv
           </Link>
-          <Link href={"/"}>
+          <Link
+            href={"https://www.linkedin.com/in/gabriele-pagliaricci-ba7b43272/"}
+          >
             <i className="bi bi-linkedin me-4 fs-3"></i>
             Gabriele Pagliaricci
           </Link>
