@@ -9,17 +9,17 @@ import { Container, Col, Row } from "react-bootstrap";
 import NavBar from "./(components)/NavBar";
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Gabriele Pagliaricci",
-  description: "Gabriele Pagliaricci's Webfolio ",
-  openGraph: {
-    images: [
-      {
-        url: "/assets/cvphoto.jpg",
-      },
-    ],
-  },
-};
+// export const metadata: Metadata = {
+//   title: "Gabriele Pagliaricci",
+//   description: "Gabriele Pagliaricci's Webfolio ",
+//   openGraph: {
+//     images: [
+//       {
+//         url: "/assets/cvphoto.jpg",
+//       },
+//     ],
+//   },
+// };
 
 export default function RootLayout({
   children,
