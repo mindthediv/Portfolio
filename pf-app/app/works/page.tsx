@@ -43,24 +43,26 @@ export default function Works() {
         })}
         {/* DESKTOP */}
         <div className="d-none d-sm-block">
-          <Row className="rounded py-2 m-0 justify-content-evenly">
+          <Row className="rounded py-2 m-0 justify-content-evenly ">
             {works.map((box) => {
               return (
                 <>
                   <Col xs={4} lg={4} className="p-1">
-                    <div
-                      className="workBox d-flex"
-                      style={{
-                        backgroundImage: box.img,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        margin: "auto",
-                      }}
-                    >
-                      <div className="h-100 w-100 blurrer d-flex align-items-center">
-                        <h3 className="ps-2 workH3">{box.title}</h3>
+                    <a href={box.repo} target="_blank">
+                      <div
+                        className="workBox d-flex"
+                        style={{
+                          backgroundImage: box.img,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                          margin: "auto",
+                        }}
+                      >
+                        <div className="h-100 w-100 blurrer d-flex align-items-center">
+                          <h3 className="ps-2 workH3">{box.title}</h3>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                     <p className="p-2 text-center mb-0">{box.caption}</p>
                     <a href={box.repo} target="_blank">
                       <h5 className="text-center">See on GitHub</h5>

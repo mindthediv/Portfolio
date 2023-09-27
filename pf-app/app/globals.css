@@ -34,6 +34,7 @@ main {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
 main {
   overflow-y: auto;
   overflow-x: visible;
@@ -109,6 +110,10 @@ main {
 .my-caro h3,
 .my-caro p {
   color: rgb(43, 27, 35) !important;
+}
+
+.skillBox:hover {
+  transform: scale(1.5);
 }
 
 .workBox {

@@ -30,7 +30,7 @@ export default function SkillGrid() {
               xs={2}
               sm={3}
               md={2}
-              className="square m-1"
+              className="square m-1 skillBox"
               style={{
                 backgroundImage: `url(${skill} )`,
                 backgroundPosition: "center",
